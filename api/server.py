@@ -4,7 +4,7 @@ from config import *
 
 
 
-@app.route("/",methods=["GET"])
+@app.route("/api/test",methods=["GET"])
 def auth_gen():
     try:
         result = {'status':"OK",'message':"Running"}
