@@ -4,9 +4,11 @@ from flask_cors import CORS, cross_origin
 from io import BytesIO
 import json
 import datetime,time
-import os,xlsxwriter,io,shutil
+import os
 import requests,urllib3,base64
-
+import psycopg2
+import psycopg2.extras
+import hashlib
 
 urllib3.disable_warnings()
 app = Flask(__name__)
